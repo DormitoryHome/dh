@@ -35,7 +35,7 @@ public class test {
         System.out.print(account.getUsername());
 
         Account account1 = new Account();
-        account1.setUsername("d");
+        account1.setUsername("test1");
         account1.setPassword("123");
         account1.setEmail("123@qq.com");
         accountMapper.insertAccount(account1);

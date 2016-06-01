@@ -25,19 +25,18 @@ public class AccountService {
         return sessionFactory;
     }
 
-    //    SqlSession sqlSession = getSessionFactory().openSession();
-//    private AccountMapper accountMapper = sqlSession.getMapper(AccountMapper.class);
-//    private AccountMapper accountMapper;
-    private static AccountMapper accountMapper = getSessionFactory().openSession().getMapper(AccountMapper.class);
+    private static SqlSession sqlSession = getSessionFactory().openSession();
+    private static AccountMapper accountMapper = sqlSession.getMapper(AccountMapper.class);
 
     public Account registerAccount(Account account) {
-        if (accountMapper.findAccount(account.getUsername()) != null) {
-            System.out.print(accountMapper.findAccount(account.getUsername()).getUsername());
-            System.out.print(accountMapper.findAccount(account.getUsername()).getPassword());
-            System.out.print(accountMapper.findAccount(account.getUsername()).getEmail());
+        if (accountMapper.findAccount(account.getUsername()) != null)
             return null;
-        } else
+        else {
+            //事务提交
             accountMapper.insertAccount(account);
+            sqlSession.commit();
+            sqlSession.close();
+        }
         return account;
     }
 

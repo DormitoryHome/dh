@@ -8,7 +8,7 @@
         select * from account where username = #{username}
     </select>
 
-    <insert id="insertAccount" parameterType="com.dh.persistence.AccountMapper">
+    <insert id="insertAccount" parameterType="com.dh.domain.Account">
         INSERT INTO account(username, password, email) VALUES (#{username}, #{password}, #{email})
     </insert>
 

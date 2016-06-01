@@ -26,7 +26,6 @@ public class RegisterServlet extends HttpServlet {
             request.getRequestDispatcher("/WEB-INF/jsp/error.jsp").forward(request, response);
             return;
         }
-        service.registerAccount(account);
 
         request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request, response);
     }

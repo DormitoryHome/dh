@@ -8,15 +8,10 @@ import com.dh.domain.Account;
 public class request2Account {
     public static Account request2Account(HttpServletRequest request){
         try{
-            Account account =new Account();
+            Account account = new Account();
             account.setUsername(request.getParameter("username"));
-            account.setEmail(request.getParameter("email"));
             account.setPassword(request.getParameter("password"));
-//            System.out.println("用户名" + account.getPassword() + "dd");
-//            System.out.println(account.getUsername() + account.getEmail());
-//            System.out.println(account.getUsername().getClass());
-//            System.out.println(account.getPassword().getClass());
-//            System.out.println(account.getEmail().getClass());
+            account.setEmail(request.getParameter("email"));
             return account;
         }catch (Exception e) {
             throw new RuntimeException(e);

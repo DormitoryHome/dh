@@ -1,4 +1,4 @@
-package com.dh.web;
+package com.dh.web.action;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,6 +9,8 @@ import java.io.IOException;
 
 import com.dh.domain.Account;
 import com.dh.service.AccountService;
+import com.dh.web.change.Request2Account;
+
 /**
  * Created by kai on 2016/06/01.
  */
@@ -20,13 +22,14 @@ public class RegisterServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Account account = new Account();
-        account = request2Account.request2Account(request);
+        account = Request2Account.request2Account(request);
         AccountService service = new AccountService();
         if (service.registerAccount(account) == null) {
             request.getRequestDispatcher("/WEB-INF/jsp/error.jsp").forward(request, response);
             return;
         }
+        request.getSession().setAttribute("account", account);
+        response.sendRedirect("/index.jsp");
 
-        request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request, response);
     }
 }

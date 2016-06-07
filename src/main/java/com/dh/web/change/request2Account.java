@@ -1,11 +1,11 @@
-package com.dh.web;
+package com.dh.web.change;
 
 import javax.servlet.http.HttpServletRequest;
 import com.dh.domain.Account;
 /**
- * Created by kai on 2016/06/01.
+ * Created on 2016/06/01.
  */
-public class request2Account {
+public class Request2Account {
     public static Account request2Account(HttpServletRequest request){
         try{
             Account account = new Account();

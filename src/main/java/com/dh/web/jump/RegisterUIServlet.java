@@ -1,4 +1,4 @@
-package com.dh.web;
+package com.dh.web.jump;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by kai on 2016/06/01.
+ * Created on 2016/06/01.
  */
 @WebServlet(name = "RegisterUIServlet", urlPatterns = "/register")
 public class RegisterUIServlet extends HttpServlet {
@@ -17,6 +17,6 @@ public class RegisterUIServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/jsp/register.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/jsp/account/register.jsp").forward(request, response);
     }
 }

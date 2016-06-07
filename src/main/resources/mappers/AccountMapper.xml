@@ -12,8 +12,7 @@
         INSERT INTO account(username, password, email) VALUES (#{username}, #{password}, #{email})
     </insert>
 
-
-    <!--<select id="findAccount">-->
-        <!--select * from account where username = #{0} and password = #{1}-->
-    <!--</select>-->
+    <select id="loginAccount" parameterType="Map" resultType="Account">
+        select * from account where username = #{username} and password = #{password}
+    </select>
 </mapper>

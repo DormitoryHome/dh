@@ -5,14 +5,14 @@
 
 <mapper namespace="com.dh.persistence.AccountMapper">
     <select id="findAccount" parameterType="String" resultType="Account">
-        select * from account where username = #{username}
+        select * from Account where username = #{username}
     </select>
 
     <insert id="insertAccount" parameterType="com.dh.domain.Account">
-        INSERT INTO account(username, password, email) VALUES (#{username}, #{password}, #{email})
+        INSERT INTO Account(username, password, email) VALUES (#{username}, #{password}, #{email})
     </insert>
 
     <select id="loginAccount" parameterType="Map" resultType="Account">
-        select * from account where username = #{username} and password = #{password}
+        select * from Account where username = #{username} and password = #{password}
     </select>
 </mapper>

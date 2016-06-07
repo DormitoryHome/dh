@@ -1,7 +1,7 @@
 CREATE database dh;
 use dh;
 
-CREATE TABLE account (
+CREATE TABLE Account (
 uid INT PRIMARY KEY AUTO_INCREMENT,
 username VARCHAR (20),
 password VARCHAR (20),

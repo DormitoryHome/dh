@@ -1,0 +1,23 @@
+div.TitleLogin{
+    min-width: 400px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.TitleLink{
+    font-family: 华文行楷;
+    font-size: 45px;
+    color: #00A06B;
+    text-decoration: none;
+}
+
+div.LoginStatus{
+    float:right;
+}
+
+div.LoginStatus a{
+    font-family: 华文宋体;
+    font-size: 20px;
+    font-weight: 300;
+}

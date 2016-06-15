@@ -15,8 +15,8 @@ import java.util.Map;
 /**
  * Created on 2016/06/05.
  */
-@WebServlet(name = "LoginServlet", urlPatterns = "/servlet/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet(name = "LoginAction", urlPatterns = "/action/login")
+public class LoginAction extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
         }
         request.getSession().setAttribute("account", account);
 //        request.getRequestDispatcher("/index.jsp").forward(request,response);
-        response.sendRedirect("/index.jsp");
+        response.sendRedirect(request.getContextPath() + "/index.jsp");
     }
 }
 

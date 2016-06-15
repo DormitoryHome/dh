@@ -14,8 +14,8 @@ import com.dh.web.change.Request2Account;
 /**
  * Created by kai on 2016/06/01.
  */
-@WebServlet(name = "RegisterServlet", urlPatterns = "/servlet/register")
-public class RegisterServlet extends HttpServlet {
+@WebServlet(name = "RegisterAction", urlPatterns = "/action/register")
+public class RegisterAction extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
@@ -29,7 +29,7 @@ public class RegisterServlet extends HttpServlet {
             return;
         }
         request.getSession().setAttribute("account", account);
-        response.sendRedirect("/index.jsp");
+        response.sendRedirect(request.getContextPath() + "/index.jsp");
 
     }
 }

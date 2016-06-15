@@ -20,7 +20,7 @@
 </head>
 
 <body style="text-align: center;">
-<form action="${pageContext.request.contextPath}/servlet/register" method="post">
+<form action="${pageContext.request.contextPath}/action/register" method="post">
     <table width="60%" border="1">
         <tr>
             <td>用户名</td>

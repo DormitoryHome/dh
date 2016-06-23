@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dh.persistence.ItemMapper">
+    <select id="getItemListByType" parameterType="String" resultType="Item">
+        SELECT * FROM Item WHERE category LIKE CONCAT(#{category}, '%')
+    </select>
+
+    <select id="getItemByName" parameterType="String" resultType="Item">
+        SELECT * FROM Item WHERE name = #{name}
+    </select>
+</mapper>

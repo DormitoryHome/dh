@@ -13,6 +13,6 @@ public interface AccountMapper {
 
     void insertAccount(Account account);
 
-    Account loginAccount(Map map); //可用map
-//    Account loginAccount(Map map); //可用map
+    Account loginAccount(Map map);
+
 }

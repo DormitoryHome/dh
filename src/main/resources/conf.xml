@@ -7,6 +7,7 @@
     <typeAliases>
         <!--给实体类起一个别名-->
         <typeAlias type="com.dh.domain.Account" alias="Account"/>
+        <typeAlias type="com.dh.domain.Item" alias="Item"/>
     </typeAliases>
     <!--数据源配置 使用mysql数据库 -->
     <environments default="development">
@@ -20,8 +21,10 @@
             </dataSource>
         </environment>
     </environments>
+
     <mappers>
         <!--AccountMapper.xml装载进来 同等于把“dao”的实现装载进来 -->
         <mapper resource="mappers/AccountMapper.xml"/>
+        <mapper resource="mappers/ItemMapper.xml"/>
     </mappers>
 </configuration>

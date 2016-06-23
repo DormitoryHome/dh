@@ -2,6 +2,7 @@ package com.dh.service;
 
 import com.dh.domain.Account;
 import com.dh.persistence.AccountMapper;
+import com.dh.web.action.InitAction;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -11,23 +12,12 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * Created by kai on 2016/06/01.
+ * Created on 2016/06/01.
  */
 public class AccountService {
 
-    private static SqlSessionFactory getSessionFactory() {
-        SqlSessionFactory sessionFactory = null;
-        String resource = "conf.xml";
-        try {
-            sessionFactory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsReader(resource));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return sessionFactory;
-    }
-
     public Account registerAccount(Account account) {
-        SqlSession sqlSession = getSessionFactory().openSession();
+        SqlSession sqlSession = InitAction.sessionFactory.openSession();
         try {
             AccountMapper accountMapper = sqlSession.getMapper(AccountMapper.class);
             if (accountMapper.findAccount(account.getUsername()) != null)
@@ -43,7 +33,7 @@ public class AccountService {
     }
 
     public Account loginAccount(Map map) {
-        SqlSession sqlSession = getSessionFactory().openSession();
+        SqlSession sqlSession = InitAction.sessionFactory.openSession();
         try {
             AccountMapper accountMapper = sqlSession.getMapper(AccountMapper.class);
             return accountMapper.loginAccount(map);

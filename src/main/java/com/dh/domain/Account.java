@@ -1,11 +1,13 @@
 package com.dh.domain;
 
 /**
- * Created by kai on 2016/05/31.
+ * 账户
+ * 用户名 密码 邮箱
+ * Created on 2016/05/31.
  */
 public class Account {
 
-    //private String userID;
+
     private String username;
     private String password;
     private String email;

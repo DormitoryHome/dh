@@ -3,6 +3,8 @@ package com.dh.web.change;
 import javax.servlet.http.HttpServletRequest;
 import com.dh.domain.Account;
 /**
+ * aaa
+ * sdadwfg
  * Created on 2016/06/01.
  */
 public class Request2Account {
@@ -13,6 +15,7 @@ public class Request2Account {
             account.setPassword(request.getParameter("password"));
             account.setEmail(request.getParameter("email"));
             return account;
+
         }catch (Exception e) {
             throw new RuntimeException(e);
         }

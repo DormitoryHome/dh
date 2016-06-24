@@ -5,6 +5,7 @@ import com.dh.domain.Account;
 import java.util.Map;
 
 /**
+ * 账户查找
  * Created on 2016/05/31.
  */
 public interface AccountMapper {

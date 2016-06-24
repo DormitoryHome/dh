@@ -5,6 +5,7 @@ import com.dh.domain.Item;
 import java.util.List;
 
 /**
+ * 商品查找
  * Created on 2016/06/22.
  */
 public interface ItemMapper {

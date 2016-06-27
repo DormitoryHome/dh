@@ -1,0 +1,61 @@
+div.UserCenter{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.UserCenter div {
+    margin-bottom: 20px;
+}
+div.UserCenter div label {
+    float: left;
+    color: #ffffff;
+    background-color: #789c80;
+    border: solid #dddddd 2px;
+    text-align: center;
+    padding: 1em;
+    width: 70px;
+}
+
+div.UserCenter div div {
+    width: 900px;
+    min-height: 100px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+table.UserDetail{
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin-left: 20%;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+table.UserDetail td:first-child{
+    width: 80px;
+    border-right: solid 3px #000000;
+    background-color: #dddddd 
+}
+table.UserDetail td{
+    width: 100px;
+    border: solid 1px #000000;
+}
+
+table.RepairDetail {
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin-left: 20%;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+table.RepairDetail tr:first-child{
+    width: 80px;
+    border-bottom: solid 3px #000000;
+    background-color: #dddddd 
+}
+
+table.RepairDetail tr td{
+    border: solid 1px #000000;
+    min-width: 130px;
+}

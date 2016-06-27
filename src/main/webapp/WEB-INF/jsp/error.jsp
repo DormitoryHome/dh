@@ -10,15 +10,27 @@
 
 <html>
 <head>
-    <meta http-equiv="refresh" content="3;url=${pageContext.request.contextPath}/login"/>
+    <c:if test="${requestScope.error=='user' || requestScope.error=='check'}">
+        <meta http-equiv="refresh" content="1;url=${pageContext.request.contextPath}/login"/>
+    </c:if>
+    <c:if test="${requestScope.error=='registerUser' || requestScope.error=='registerCheck'}">
+        <meta http-equiv="refresh" content="1;url=${pageContext.request.contextPath}/register"/>
+    </c:if>
+
     <title></title>
 </head>
 <body>
 <c:if test="${requestScope.error=='user'}">
-    <h3>对不起，用户名或密码有误！！请重新登录！3秒后为您自动跳到登录页面！！</h3>
+    <h3 style="margin-top: 100px;text-align: center;color: red">对不起，用户名或密码有误！！请重新登录！自动跳到登录页面</h3>
 </c:if>
 <c:if test="${requestScope.error=='check'}">
-    <h3>对不起，验证码有误！！请重新登录！3秒后为您自动跳到登录页面！！</h3>
+    <h3 style="margin-top: 100px;text-align: center;color: red">对不起，验证码有误！！请重新登录！自动跳到登录页面</h3>
+</c:if>
+<c:if test="${requestScope.error=='registerUser'}">
+    <h3 style="margin-top: 100px;text-align: center;color: red">对不起，用户名已存在！！请重新注册！自动跳到注册页面</h3>
+</c:if>
+<c:if test="${requestScope.error=='registerCheck'}">
+    <h3 style="margin-top: 100px;text-align: center;color: red">对不起，验证码有误！！请重新注册！自动跳到注册页面</h3>
 </c:if>
 </body>
 </html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dh.persistence.RepairMapper">
+
+    <insert id="insertRepair" parameterType="com.dh.domain.Repair">
+        INSERT INTO Repair(Account_UID, name, problem, address, status) VALUES (#{account_UID}, #{name}, #{problem}, #{address}, #{status})
+    </insert>
+
+    <select id="getRepairList" parameterType="int" resultType="com.dh.domain.Repair">
+        SELECT * FROM Repair WHERE account_UID = #{account_UID}
+    </select>
+</mapper>

@@ -32,5 +32,7 @@
     <mappers>
         <mapper resource="mappers/AccountMapper.xml"/>
         <mapper resource="mappers/ItemMapper.xml"/>
+        <mapper resource="mappers/RepairMapper.xml"/>
+        <mapper resource="mappers/CartMapper.xml"/>
     </mappers>
 </configuration>

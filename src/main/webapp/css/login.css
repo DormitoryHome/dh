@@ -6,23 +6,49 @@
 	padding: 0px;
 }
 body {
+	background-image: url("../images/backgroud.png");
+	background-repeat: repeat;
+	/*font-size:20px;*/
+	/*line-height: 37px;*/
+	/*color: #990;*/
+	
+}
+#title {
+	border-bottom: 2px solid #E6D2D2;
+	color: black;
+	text-align: center;
+}
+
+.box {
+	width:420px;
+	height:400px;
+	margin: 0px auto 0px auto;
+	padding:50px;
 	font-size:20px;
 	line-height: 37px;
 	color: #990;
-	
 }
-.box {
-	width:325px;
-	height:100px;
-	background-image: url(../images/LoginBox.jpg);
-	background-repeat: no-repeat;
-	margin: 0px auto 0px auto;
-	padding:150px 49px 78px 130px;
+#login {
+	width: 100px;
+	height: 30px;
+	border: 1px solid #66ccff;
+	background-color: #4CBADE;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	margin-left:50px;
 }
-#btn {
-	width: 70px;
-	height: 70px;
-	float:right;
+#register {
+	display: inline-block;
+	border: 1px solid #ccc;
+	height: 30px;
+	width: 100px;
+	margin-left: 30px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	line-height: 30px;
+	color: #555;
 }
 #yangzhengmatu
 {
@@ -30,6 +56,28 @@ body {
 	height:50px;
 	float:right;
 }
-#mentant
-{
+
+#registerForm {
+	width: 200px;
+	height: 30px;
+	border: 1px solid #66ccff;
+	background-color: #4CBADE;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.onError {
+	color: red;
+	font-size: 14px;
+}
+
+.box1 {
+	width:580px;
+	height:400px;
+	margin: 0px auto 0px auto;
+	padding:50px;
+	font-size:20px;
+	line-height: 37px;
+	color: #990;
 }

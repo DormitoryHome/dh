@@ -6,12 +6,21 @@ package com.dh.domain;
  * Created on 2016/06/22.
  */
 public class Item {
+    private int UID;
     private String name;
     private String img;
     private String brief;
     private String category;
     private int quantity;
     private float price;
+
+    public int getUID() {
+        return UID;
+    }
+
+    public void setUID(int UID) {
+        this.UID = UID;
+    }
 
     public String getName() {
         return name;

@@ -10,7 +10,7 @@ public class Order {
     private int account_UID;
     private int item_UID;
     private int quantity;
-    private String time;
+    private String orderTime;
     private String status;
     private String address;
 
@@ -46,12 +46,12 @@ public class Order {
         this.quantity = quantity;
     }
 
-    public String getTime() {
-        return time;
+    public String getOrderTime() {
+        return orderTime;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setOrderTime(String orderTime) {
+        this.orderTime = orderTime;
     }
 
     public String getStatus() {

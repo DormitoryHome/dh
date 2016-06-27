@@ -7,10 +7,18 @@ package com.dh.domain;
  */
 public class Account {
 
-
+    private int UID;
     private String username;
     private String password;
     private String email;
+
+    public int getUID() {
+        return UID;
+    }
+
+    public void setUID(int UID) {
+        this.UID = UID;
+    }
 
     public String getUsername() {
         return username;

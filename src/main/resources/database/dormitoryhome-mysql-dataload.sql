@@ -1,0 +1,50 @@
+INSERT INTO Account(username, password, email) VALUES("admin", "123456", "DormitoryHome@163.com");
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("乐事","/images/乐事黄瓜.jpg",30,5,"黄瓜味",11);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("乐事","/images/乐事烤肉.jpg",30,5,"烤肉味",11);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("士力架","/images/士力架全家桶.jpg",30,28.9,"全家桶460g",12);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("德芙","/images/德芙.jpg",30,10,"花生夹心",12);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("统一袋","/images/统一袋.jpg",30,2.5,"老坛酸菜",13);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("统一桶","/images/统一桶.jpg",30,4.5,"老坛酸菜",13);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("双汇","/images/双汇玉米肠.jpg",30,6,"玉米肠",14);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("双汇","/images/双汇王中王.jpg",30,12,"王中王",14);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("奥利奥","/images/奥利奥.jpg",30,12,"轻甜口味390g",15);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("雀巢脆脆鲨","/images/雀巢脆脆鲨.jpg",30,25,"巧克力味夹心威化饼干",15);
+
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("光明牛奶","/images/光明牛奶.jpg",30,5,"250ml",21);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("圣牧牛奶","/images/光明牛奶.jpg",30,5,"330ml",21);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("维他奶","/images/维他奶.jpg",30,3,"250ml",22);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("苏打水","/images/苏打水.jpg",30,4,"330ml",22);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("咖啡","/images/咖啡.jpg",30,7,"280ml",23);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("奶茶","/images/奶茶.jpg",30,3,"250ml",23);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("农夫山泉","/images/农夫山泉.jpg",30,2,"550ml",24);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("百岁山","/images/百岁山.png",30,2,"560ml",24);
+
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("清扬","/images/清扬.jpg",5,50,"男士洗发水",31);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("飘柔","/images/飘柔.jpg",5,33,"滋润去屑",31);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("舒肤佳","/images/舒肤佳.jpg",5,30,"纯香沐浴",32);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("威露士","/images/威露士.jpg",5,33,"冰凉酷爽",32);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("雕牌","/images/雕牌.jpg",5,3,"206g洗衣皂",33);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("超能","/images/超能.jpg",5,8,"260g*2洗衣皂组合",33);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("云南白药牙膏","/images/云南白药牙膏.jpg",5,28,"留兰香型",34);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("黑人","/images/黑人.jpg",5,13,"祛口臭清新",34);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("佳洁士","/images/佳洁士.jpg",5,6.3,"",35);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("高露洁","/images/高露洁.jpg",5, 38.8,"电动牙刷",35);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("曼秀雷敦男士","/images/曼秀雷敦男士.jpg",5, 33.9,"控油抗痘",36);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("妮维雅","/images/妮维雅.jpg",5, 17.9,"深层清洁美白洗面奶",36);
+
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("得力签字笔","/images/得力签字笔.jpg",5, 12.9,"12支",41);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("晨光签字笔","/images/晨光签字笔.jpg",5, 2.9,"1支",41);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("真彩圆珠笔","/images/真彩圆珠笔.jpg",5, 3,"1支",42);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("诺威圆珠笔","/images/诺威圆珠笔.jpg",5, 1,"1支",42);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("得力铅笔","/images/得力铅笔.jpg",5, 1,"2H木制",43);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("晨光铅笔","/images/晨光铅笔.jpg",5, 12.9,"彩色套装",43);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("诺威橡皮擦","/images/诺威橡皮擦.jpg",5, 0.7,"58*24*11mm",44);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("三木橡皮檫","/images/三木橡皮檫.jpg",5, 1.5,"单只",44);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("广博直尺","/images/广博直尺.jpg",5, 2.9,"30cm",45);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("晨光圆规套装","/images/晨光圆规套装.jpg",5, 1.5,"尺子橡皮圆规",45);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("得力笔袋","/images/得力笔袋.jpg",5, 10,"多层大容量/铅笔文具盒",46);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("广博笔袋","/images/广博笔袋.jpg",5, 10,"Kitty大容量学生皮质笔袋铅笔盒",46);
+
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("品胜耳机","/images/品胜耳机.jpg",2, 49,"入耳耳塞式", 51);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("品胜移动电源","/images/品胜移动电源.jpg",2, 179,"20000毫安", 52);
+INSERT INTO Item(name, img, quantity, price, brief, category) VALUES("品胜苹果6s透明硅胶套","/images/品胜苹果6s透明硅胶套.jpg",10,12,"全方位保护",52);

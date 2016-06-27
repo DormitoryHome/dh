@@ -1,0 +1,49 @@
+div.NavigateBackground{
+    width: 100%;
+    background-color: #00A06B;
+    height: 40px;
+}
+div.NavigateLimit{
+    min-width: 600px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ul.NavigateUList{
+    list-style-type: none;
+}
+
+ul.NavigateUList li{
+    float: left;
+}
+
+ul.NavigateUList a{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    background-color: #00A06B;
+    padding: 0.5em 0.75em;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.NavigateUList a:hover{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    background-color: #7eba24;
+    padding: 0.5em 0.75em;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+form.NavigateForm{
+    display: block;
+    float: right;
+    padding: 0.5em 0.75em;
+}

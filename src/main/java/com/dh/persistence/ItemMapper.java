@@ -10,6 +10,9 @@ import java.util.List;
  */
 public interface ItemMapper {
     //根据类别选择 根据商品名
+    List<Item> getItemList();
     List<Item> getItemListByType(String category);
-    Item getItemByName(String name);
+    List<Item> getItemByName(String name);
+    Item getItemByUID(int UID);
+
 }

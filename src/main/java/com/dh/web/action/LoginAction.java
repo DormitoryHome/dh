@@ -38,7 +38,9 @@ public class LoginAction extends HttpServlet {
                 return;
             }
             request.getSession().setAttribute("account", account);
-            response.sendRedirect(request.getContextPath() + "/index.jsp");
+            request.setAttribute("success", "login");
+            request.getRequestDispatcher("/WEB-INF/jsp/success.jsp").forward(request, response);
+//            response.sendRedirect(request.getContextPath() + "/index.jsp");
         } else {
             request.setAttribute("error","check");
             request.getRequestDispatcher("/WEB-INF/jsp/error.jsp").forward(request, response);

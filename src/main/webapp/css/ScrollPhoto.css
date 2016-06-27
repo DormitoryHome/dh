@@ -1,0 +1,86 @@
+div.ScrollPhoto{
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    width: 800px;
+    height: 500px;
+    float: left;
+}
+
+a.ScrollPhotoPreIndex{
+    display: block;
+    background-image: url("../images/ScrollPhoto_PreIndex.png");
+    background-repeat: no-repeat;
+    width: 56px;
+    height: 78px;
+    position: absolute;
+    top: 235px;
+    left: 20px;
+    z-index: 2;
+}
+a.ScrollPhotoPreIndex:hover{
+    background-image: url("../images/ScrollPhoto_PreIndexHover.png");
+}
+a.ScrollPhotoNextIndex{
+    display: block;
+    background-image: url("../images/ScrollPhoto_NextIndex.png");
+    background-repeat: no-repeat;
+    width: 56px;
+    height: 78px;
+    position: absolute;
+    top: 235px;
+    right: 20px;
+    z-index: 2;
+}
+a.ScrollPhotoNextIndex:hover{
+    background-image: url("../images/ScrollPhoto_NextIndexHover.png");
+}
+
+ul.PhotoLoop{
+    width: 5000px;
+    height: 500px;
+    padding: 0px;
+    margin:0px;
+    list-style: none;
+    position: absolute;
+    left:0px;
+}
+ul.PhotoLoop li{
+    width: 1000px;
+    height: 500px;
+    float: left;
+}
+ul.PhotoLoop img{
+    width: 800px;
+    height: 500px;
+}
+
+ul.PhotoIndex{
+    padding: 0px;
+    margin:0px;
+    list-style: none;
+    width: 800;
+    height: 8;
+    position: absolute;
+    bottom: 0px;
+    right: 384px;
+    z-index: 3;
+}
+ul.PhotoIndex li{
+    float: left;
+}
+a.ScrollPhotoIndex{
+    background-image: url("../images/ScrollPhoto_Index.png");
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 8px;
+    float: left;
+}
+
+a.ScrollPhotoIndexOn{
+    background-image: url("../images/ScrollPhoto_IndexOn.png");
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 8px;
+    float: left;
+}

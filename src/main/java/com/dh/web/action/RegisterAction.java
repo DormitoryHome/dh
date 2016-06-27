@@ -21,15 +21,26 @@ public class RegisterAction extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Account account = new Account();
-        account = Request2Account.request2Account(request);
-        AccountService service = new AccountService();
-        if (service.registerAccount(account) == null) {
+        String clientCheckCode = request.getParameter("yanzhengma");//接收客户端浏览器提交上来的验证码
+        String serverCheckCode = (String) request.getSession().getAttribute("checkCode");//从服务器端的session中取出验证码
+        if (clientCheckCode.equals(serverCheckCode)){
+            Account account = new Account();
+            account = Request2Account.request2Account(request);
+            AccountService service = new AccountService();
+            if (service.registerAccount(account) == null) {
+                request.setAttribute("error", "registerUser");
+                request.getRequestDispatcher("/WEB-INF/jsp/error.jsp").forward(request, response);
+                return;
+            }
+            request.getSession().setAttribute("account", account);
+            request.setAttribute("success", "register");
+            request.getRequestDispatcher("/WEB-INF/jsp/success.jsp").forward(request, response);
+//            response.sendRedirect(request.getContextPath() + "/index.jsp");
+        } else {
+            request.setAttribute("error","registerCheck");
             request.getRequestDispatcher("/WEB-INF/jsp/error.jsp").forward(request, response);
-            return;
         }
-        request.getSession().setAttribute("account", account);
-        response.sendRedirect(request.getContextPath() + "/index.jsp");
+
 
     }
 }

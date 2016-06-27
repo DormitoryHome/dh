@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background-color:#fff;
+	margin:0px 50px 0px 50px;
+	text-align:center;
+}
+
+#middle
+{
+	margin:auto;
+	width:1300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#leftclassification
+{
+	width:200px;
+	float:left;
+	border-right-style:solid;
+	border-right-width:thin;
+	margin-right: 10px;
+}
+#show
+{
+	width:1000px;
+	float:left;
+	
+}
+div.leftclassification ul
+{
+	text-align:none;
+}
+ul.classification p
+{
+	margin-left:0px;
+	font-family:华文宋体;
+	font-size:20px;
+	cursor:pointer;
+}
+ul.classification a 
+{
+	text-decoration:none;
+}
+ul.classification li
+{
+	margin-left:20px;
+	display: none;
+	list-style: none;
+}
+
+div.levelchild
+{
+	float:left;
+	width:300px;
+	height:380px;
+	margin-right:0px;
+}
+.images
+{
+	width:300px;
+	height:200px;
+}
+
+
+
+

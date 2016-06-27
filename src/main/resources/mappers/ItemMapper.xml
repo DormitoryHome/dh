@@ -4,11 +4,20 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.dh.persistence.ItemMapper">
+
+    <select id="getItemList" resultType="Item">
+        SELECT * FROM Item
+    </select>
+
     <select id="getItemListByType" parameterType="String" resultType="Item">
         SELECT * FROM Item WHERE category LIKE CONCAT(#{category}, '%')
     </select>
 
     <select id="getItemByName" parameterType="String" resultType="Item">
-        SELECT * FROM Item WHERE name = #{name}
+        SELECT * FROM Item WHERE name LIKE CONCAT('%', #{name}, '%')
+    </select>
+
+    <select id="getItemByUID" parameterType="int" resultType="Item">
+        SELECT * FROM Item WHERE UID = #{UID}
     </select>
 </mapper>

@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** {*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+/*}*/
+body {
+    background-image: url("../images/backgroud.png");
+    background-repeat: repeat;
+}
+/*item.css*/
+#middle
+{
+    margin:0px 50px 0px 50px;
+    text-align:center;
+    margin:auto;
+    width:1300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#leftclassification
+{
+    width:200px;
+    float:left;
+    border-right-style:solid;
+    border-right-width:thin;
+    margin-right: 10px;
+}
+#show
+{
+    width:1000px;
+    float:left;
+    background-color: white;
+}
+div.leftclassification ul
+{
+    text-align:none;
+}
+ul.classification p
+{
+    margin-left:0px;
+    font-family:华文宋体;
+    font-size:20px;
+    cursor:pointer;
+}
+ul.classification a
+{
+    text-decoration:none;
+}
+ul.classification li
+{
+    margin-left:20px;
+    display: none;
+    list-style: none;
+}
+
+div.levelchild
+{
+    float:left;
+    width:245px;
+    height:350px;
+    margin-right:0px;
+    border: solid 1px #dcdcdc;
+}
+.images
+{
+    width:245px;
+    height:200px;
+}
+
+/*TitleLogin.css*/
+div.TitleLogin{
+    min-width: 400px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.TitleLink{
+    font-family: 华文行楷;
+    font-size: 45px;
+    color: #00A06B;
+    text-decoration: none;
+}
+
+div.LoginStatus{
+    float:right;
+}
+
+div.LoginStatus a{
+    font-family: 华文宋体;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*Navigate.css*/
+div.NavigateBackground{
+    width: 100%;
+    background-color: #00A06B;
+    height: 40px;
+}
+div.NavigateLimit{
+    min-width: 600px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ul.NavigateUList{
+    list-style-type: none;
+}
+
+ul.NavigateUList li{
+    float: left;
+}
+
+ul.NavigateUList a{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    background-color: #00A06B;
+    padding: 0.5em 0.75em;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.NavigateUList a:hover{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    background-color: #7eba24;
+    padding: 0.5em 0.75em;
+    color: #fff;
+    text-decoration: none;
+}
+
+form.NavigateForm{
+    display: block;
+    float: right;
+    padding: 0.5em 0.75em;
+}
+
+div.allDiv {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*AllSort.css*/
+div.AllSort{
+    position: relative;
+    z-index: 10;
+    background-color: #b61d1d;
+    width: 200px;
+    height: 500px;
+    float: left;
+}
+
+div.AllSort a{
+    color: #fff;
+    text-decoration: none;
+}
+
+div.AllSort ul{
+    display: block;
+    color: #fff;
+    list-style-type: none;
+    font-size: 100%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+div.AllSort ul li{
+    padding: 0.5em 0.75em;
+    background-color: #b61d1d;
+}
+div.AllSort ul li:hover{
+    background-color: #C9E4D6;
+}
+
+
+li.HaveSub{
+    background-image: url("../images/AllSort_Right.gif");
+    background-repeat: no-repeat;
+    background-position: 95% 50%
+}
+li.HaveSub:hover{
+    background-image: url("../images/AllSort_RightHover.gif");
+}
+
+
+div.SubSort{
+    width: 200px;
+    height: 0px;
+    float: left;
+    position: relative;
+    left:180px;
+    bottom: 35px;
+}
+div.SubSort ul{
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+}
+div.SubSort ul li{
+    background-image: none;
+}
+div.SubSort ul li:hover{
+    background-image: none;
+}
+
+#title {
+    border-bottom: 2px solid #E6D2D2;
+    color: black;
+    text-align: center;
+}
+
+.box {
+    width:420px;
+    height:400px;
+    margin: 0px auto 0px auto;
+    padding:50px;
+    font-size:20px;
+    line-height: 37px;
+    color: #990;
+}
+#login {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #66ccff;
+    background-color: #4CBADE;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left:50px;
+}
+#register {
+    display: inline-block;
+    border: 1px solid #ccc;
+    height: 30px;
+    width: 100px;
+    margin-left: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: #555;
+}
+#yangzhengmatu
+{
+    width:80px;
+    height:50px;
+    float:right;
+}
+
+#registerForm {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #66ccff;
+    background-color: #4CBADE;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.onError {
+    color: red;
+    font-size: 14px;
+}

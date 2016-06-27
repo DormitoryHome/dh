@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dh.persistence.CartMapper">
+
+    <insert id="insertCart" parameterType="com.dh.domain.Cart">
+        INSERT INTO Cart(account_UID, item_UID, quantity) VALUES (#{account_UID}, #{item_UID}, #{quantity})
+    </insert>
+
+
+    <select id="getCartList" parameterType="int" resultType="com.dh.domain.Cart">
+        SELECT * FROM Cart WHERE account_UID = #{account_UID}
+    </select>
+
+    <delete id="deleteCart" parameterType="int">
+        DELETE FROM Cart WHERE item_UID = #{item_UID}
+    </delete>
+
+    <delete id="deleteCartByAccount_UID" parameterType="int">
+        DELETE FROM Cart WHERE account_UID = #{account_UID}
+    </delete>
+
+    <update id="updateCart" parameterType="Map">
+        UPDATE Cart SET quantity = #{quantity} WHERE item_UID = #{item_UID}
+    </update>
+</mapper>

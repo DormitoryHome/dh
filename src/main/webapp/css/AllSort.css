@@ -1,0 +1,58 @@
+div.AllSort{
+    background-color: #b61d1d;
+    width: 200px;
+    height: 500px;
+}
+
+div.AllSort a{
+    color: #fff;
+    text-decoration: none;
+}
+
+div.AllSort ul{
+    display: block;
+    color: #fff;
+    list-style-type: none;
+    font-size: 100%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+div.AllSort ul li{
+    padding: 0.5em 0.75em;
+    background-color: #b61d1d;
+}
+div.AllSort ul li:hover{
+    background-color: #C9E4D6;
+}
+
+
+li.HaveSub{
+    background-image: url("../images/AllSort_Right.gif");
+    background-repeat: no-repeat;
+    background-position: 95% 50%
+}
+li.HaveSub:hover{
+    background-image: url("../images/AllSort_RightHover.gif");
+}
+
+
+div.SubSort{
+    width: 200px;
+    height: 0px;
+    float: left;
+    position: relative;
+    left:180px;
+    bottom: 35px;
+}
+div.SubSort ul{
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+}
+div.SubSort ul li{
+    background-image: none;
+}
+div.SubSort ul li:hover{
+    background-image: none;
+}
